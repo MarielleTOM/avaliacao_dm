@@ -1,0 +1,32 @@
+.botao {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: black;
+    color: white;
+}
+
+.container{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.p {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 25px;
+    line-height: 1.6;
+}
