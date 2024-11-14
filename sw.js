@@ -1,5 +1,5 @@
 let cacheName = "horarios-aula-pe";
-let filesToCache = ["/", "/index.html", "/css/style.css", "/js/main.js"];
+let filesToCache = ["/", "/index.html", "/css/style.css", "/js/main.js", "/pe", "/aula", "/manifest.json" ];
 
 self.addEventListener("install", (e) => {
     e.waitUntil(
@@ -10,7 +10,7 @@ self.addEventListener("install", (e) => {
 });
 
 self.addEventListener("fetch", (e) => {
-    e.respondWhith(
+    e.respondWith(
         caches.match(e.request).then((response) => {
             return response || fetch(e.request);
         })
